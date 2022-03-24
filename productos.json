@@ -1,0 +1,77 @@
+{
+  "status": "success",
+  "items": [
+    {
+      "id": 1,
+      "title": "Fresadora",
+      "price": 10000,
+      "image": "img/keyboard-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Serrucho",
+      "price": 1500,
+      "image": "img/keyboard-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Taladro atornillador de 18v",
+      "price": 19500,
+      "image": "img/keyboard-3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Sierra caladora",
+      "price": 14500,
+      "image": "img/keyboard-4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sierra circular",
+      "price": 16500,
+      "image": "img/keyboard-5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Serrucho costillero",
+      "price": 1100,
+      "image": "img/keyboard-6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Pistola clavadora",
+      "price": 15500,
+      "image": "img/keyboard-7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Escuadra carpintero",
+      "price": 850,
+      "image": "img/keyboard-8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Porta amoladora",
+      "price": 3500,
+      "image": "img/keyboard-9.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Juego de formones",
+      "price": 3900,
+      "image": "img/keyboard-10.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Juego de pinzas",
+      "price": 4850,
+      "image": "img/keyboard-11.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Caja de herramientas",
+      "price": 4550,
+      "image": "img/keyboard-12.jpg"
+    }
+  ]
+}
