@@ -7,9 +7,12 @@ const overlay = document.querySelector(".carrito__overlay");
 const carritoTotal = document.querySelector(".carrito__total");
 const clearCarritoBtn = document.querySelector(".clear__carrito");
 const itemTotales = document.querySelector(".item__total");
+const btnSA = document.getElementById('sweetAlertBtn');
 
 let carrito = [];
 let buttonDOM = [];
+
+
 
 class UI {
   renderProductos(productos) {
@@ -29,11 +32,15 @@ class UI {
               <button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
             </div>
           </div>
+          <button id="sweetAlertBtn"><h3>Ver</h3></button>
         </div>
 				`;
     });
     productoDOM.innerHTML = result;
+
+   
   }
+  
 
   getButtons() {
     const buttons = [...document.querySelectorAll(".addToCart")];
@@ -186,6 +193,7 @@ class UI {
   }
 }
 
+
 class Storage {
   static saveProduct(obj) {
     localStorage.setItem("productos", JSON.stringify(obj));
@@ -238,3 +246,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     ui.cartLogic();
   }
 });
+
+btnSA.onclick = ()=> {
+
+  Swal.success({
+  title: 'Listo',
+  text: 'Seguir comprando?',
+  icon: 'info',
+  confirmButtonColor: "#800080",
+  timer:3000,
+})
+
+}
