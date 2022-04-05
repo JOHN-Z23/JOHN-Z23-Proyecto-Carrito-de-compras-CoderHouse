@@ -256,5 +256,4 @@ btnSA.onclick = ()=> {
   confirmButtonColor: "#800080",
   timer:3000,
 })
-
 }
