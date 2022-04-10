@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ferre Solis - Tienda de Herramientas</title>
-    
+    <title>Ferre Solis - Ferreteria</title>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js" async></script>
+    <script src="./js/ferre.js" async></script>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,54 +15,77 @@
     <!--Box icons-->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
+   
   </head>
   <body>
     <!--Navegation-->
     <nav class="nav">
       <div class="nav__center container">
         <div class="nav__logo">
-          <h1>FERRE <span>SOLIS</span></h1>
-        </div>
-        <ul class="nav__list">
-          <span>
-            <i class="bx bxs-wrench"></i>
-          </span>
-          <div class="carrito__icon">
-            <i class="bx bx-cart"></i>
-            <span class="item__total">0</span>
-          </div>
-        </ul>
+					<h1>FERRE <span>SOLIS</span></h1>
+				</div>
+				<ul class="nav__list">
+					<span>
+						<i class="bx bxs-wrench"></i>
+					</span>
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
       </div>
     </nav>
+
+    <!--Filter-->
+    <section class="filter">
+      <div class="grid">
+        <div class="div">
+          <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+          <input type="text" id="buscar" placeholder="Buscar herramientas...">
+        </div>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Marcas</option>
+            <option value="dewal">Dewal</option>
+            <option value="stanley">Stanley</option>
+            <option value="bahco">Bahco</option>
+            <option value="irimo">Irimo</option>
+            <option value="blackjack">Black Jack</option>
+            <option value="daewo">Daewo</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
     <!--Productos-->
     <section class="productos">
-      <div class="productos__center"></div>
+      <div class="productos__center">
+
+      </div>
     </section>
 
     <!--Carrito-->
-
+    
     <section class="carrito__overlay">
       <div class="carrito">
         <span class="close__carrito">
           <i class="bx bx-x"></i>
         </span>
-        <h1>Mi Carrito</h1>
+        <h1>Su Carrito</h1>
 
-        <div class="carrito__center"></div>
+        <div class="carrito__center">
+
+        </div>
 
         <div class="carrito__footer">
-          <h3>Total: $ <span class="carrito__total">0</span></h3>
-          <button class="clear__carrito btn">Remover carrito</button>
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
         </div>
       </div>
     </section>
 
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js" ></script>
-    <script src="./js/ferre.js" ></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+    
   </body>
 </html>
